@@ -1,0 +1,99 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+
+}
+*box{
+    box-sizing: border-box;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: yellowgreen; */
+}
+.piyano .color{
+    display: flex;
+    /* height: 20px; */
+    /* width: 10px; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: greenyellow;
+}
+.piyano{
+    /* height: 300px; */
+    width: 1000px; ;
+    background: orange;
+    border-radius: 10px;
+    padding: 100px 30px 20px 30px;
+    position: relative;
+}
+.whitekey{
+    display: flex;
+    position: relative;
+}
+.whitekey .key{
+    display: flex;
+    height: 280px;
+    width: calc(100% /14);
+    background: white;
+    border: 2px solid black;
+    box-shadow: 0 5px 0 black;
+    border-radius: 0 0 5px 5px;
+} 
+.whitekey .key:active{
+    height: 285px;
+    box-shadow: 0 5px 0 black;
+    transform: translateY(5px);
+    margin-top: -5px;
+    background: white;
+}
+.blackkey{
+    position: absolute;
+    display: flex;
+    /* background: greenyellow; */
+    left: 0;
+    right: 0;
+    /* height: 100; */
+    z-index: 99;
+
+}
+.blackkey .key{
+    height: 170px;
+    position: absolute;
+    width: 45px;
+    background-color: black;
+    margin-left: 20px;
+    border-radius:0 0 5px 5px;
+    left: 20px;
+}
+.blackkey .key:active{
+    background:#444;
+    height: 182px;
+}
+.blackkey .key:nth-child(1){  left: 59px;}
+.blackkey .key:nth-child(2){  left: 131px;}
+.blackkey .key:nth-child(3){  left: 274px;}
+.blackkey .key:nth-child(4){  left: 344px;}
+.blackkey .key:nth-child(5){  left: 416px;}
+.blackkey .key:nth-child(6){  left: 555px;}
+.blackkey .key:nth-child(7){  left: 627px;}
+.blackkey .key:nth-child(8){  left: 700px;}
+.blackkey .key:nth-child(9){  left: 842px;}
+.blackkey .key:nth-child(10){  left: 914px;}
